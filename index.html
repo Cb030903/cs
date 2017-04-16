@@ -43,16 +43,9 @@
 		var aa=$("<div></div>").html("❉");
 		var f=$(window).width();
 		var g=$(window).height();
-	    var q=["red","yellow","blue","grey","pink","#543","#fff","#ggg"]
-//		var n=$('div').css('color','#' + Math.floor(16777216*Math.random()).toString(16));
-        
-	  
-	$(function(){
-
-
-	
+	    var q=["red","yellow","blue","grey","pink","#543","#fff","#ggg"]      	  
+	$(function(){	
 		setInterval(function(){
-//		var n=$('div').css('color','#' + Math.floor(16777216*Math.random()).toString(16));
 		
 		 	var h=Math.random()*f;
 		 	var o=Math.random()*f;
@@ -61,7 +54,6 @@
 		 	var k=3000+5000*Math.random();
 		 	var l=0.7+0.3*Math.random();
 		 	var m=0.4+0.3*Math.random();
-//		    var n=$('div').css('color','#' + Math.floor(16777216*Math.random()).toString(16));
             
 			var n=q[Math.floor(Math.random()*q.length)]
 			aa.clone().appendTo($('body')).css({
@@ -76,14 +68,7 @@
 				"left":o,
 				"top":g,
 				"opactiy":m
-				
-				
-				
-				
-				
-				
-				
-				
+	
 			},k,function(){
 			
 				$(this).remove();
