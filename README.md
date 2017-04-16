@@ -5,4 +5,4 @@
 ## 链接地址
 
 
-https://cb030903.github.io/cs/
+https://cb030903.github.io/cs/index.html
