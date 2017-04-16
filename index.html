@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+			<style type="text/css">
+		body{
+			background: #000;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			    perspective: 2000px;
+
+    
+		}
+		*{
+			padding: 0;
+			left: 0;
+		}
+		div{
+			position: absolute;
+			/*transition: 1s;*/
+			  transform-style: preserve-3d;
+		}
+		/*.s1{
+		
+			transform: rotateX(50deg);
+		}*/
+	</style>
+	</head>
+
+	<body>
+		<span>1</span>
+	<script type="text/javascript">
+		var a=5;
+		var b=50;
+		var c="#fff";
+		var d=200;
+		var aa=$("<div></div>").html("❉");
+		var f=$(window).width();
+		var g=$(window).height();
+	    var q=["red","yellow","blue","grey","pink","#543","#fff","#ggg"]
+//		var n=$('div').css('color','#' + Math.floor(16777216*Math.random()).toString(16));
+        
+	  
+	$(function(){
+
+
+	
+		setInterval(function(){
+//		var n=$('div').css('color','#' + Math.floor(16777216*Math.random()).toString(16));
+		
+		 	var h=Math.random()*f;
+		 	var o=Math.random()*f;
+		 	var i=Math.random()*g;
+		 	var j=a+Math.random()*b;
+		 	var k=3000+5000*Math.random();
+		 	var l=0.7+0.3*Math.random();
+		 	var m=0.4+0.3*Math.random();
+//		    var n=$('div').css('color','#' + Math.floor(16777216*Math.random()).toString(16));
+            
+			var n=q[Math.floor(Math.random()*q.length)]
+			aa.clone().appendTo($('body')).css({
+				"left":h,
+				"top":"-55px",
+				"opactiy":l,
+				"font-size":j,
+				"color":n
+				
+				
+			}).animate({
+				"left":o,
+				"top":g,
+				"opactiy":m
+				
+				
+				
+				
+				
+				
+				
+				
+			},k,function(){
+			
+				$(this).remove();
+			})
+		 
+		},d)
+	})
+	
+</script>
+	</body>
+
+</html>
